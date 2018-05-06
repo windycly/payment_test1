@@ -65,8 +65,6 @@
                     'reference_code': $('#reference_code').val(),
                 })
                 .done(function( data ) {
-                    console.log( data );
-
                     if (data.error) {
                         let msg = [];
                         msg.push("<strong>Error</strong>");

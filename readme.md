@@ -1,4 +1,4 @@
-# Environment
+## Environment needed
 
 - PHP version between 5.5.9 - 7.1.*
 - MySQL Server
@@ -11,13 +11,14 @@
 
 ## Start the project
 
-```migrate
+```shell
 # php artisan migrate
-```
 
-```laravel
 # php artisan serve
 ```
+
+Access http://localhost:8000/ to make payment
+Access http://localhost:8000/check to check payment
 
 ## Documentation
 
