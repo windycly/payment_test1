@@ -122,7 +122,7 @@ class PaymentController extends Controller
         $payment->response_data = $gatewayResponse->data;
         $payment->save();
 
-        Redis::set('payment_data', $payment);
+        Redis::set($payment->reference_code, $payment);
         return response()->json(['error' => false, 'data' => json_decode(Redis::get($payment->reference_code))]);
 
     }

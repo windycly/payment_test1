@@ -12,12 +12,15 @@
 ## Start the project
 
 ```shell
+# php composer.phar install --dev
+
 # php artisan migrate
 
 # php artisan serve
 ```
 
 Access http://localhost:8000/ to make payment
+
 Access http://localhost:8000/check to check payment
 
 ## Documentation
